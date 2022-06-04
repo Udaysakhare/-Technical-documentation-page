@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Project-4: Technical Documentation</title>
+  <style>
+ #main-doc{
+       display:flex;
+	   width:100%:
+	   font-family:arial, sans-serif;
+	   font-size:16px;
+     }
+    
+	 #main-body
+	{
+	    display:flex;
+		flex-direction:column;
+	    width:75%;
+		padding:20px;
+		align-self:flex-start;
+		background:#cccccc;
+		font-family:arial, sans-serif;
+	   font-size:16px;
+	   }
+
+    #navbar{
+	
+        padding:20px;
+		width:20%;
+		display:flex;
+		flex-direction:column;
+		background:#fcfcfc;
+		font-family:helvetica,arial, sans-serif;
+	    font-size:16px;
+		}
+	
+	 #navbar ul li{
+	
+	   list-style-type:none;
+	   padding:20px;
+	   border:1px solid gray;
+	
+	}
+	#navbar header h1{
+	   text-align:right;
+	}
+	#navbar a{
+	  text-decoration:none;
+	  }
+	/* MOBILE Layout */
+	
+	@media(max-width:400px)
+	{
+	#main-body{
+	
+	 background:cyan;
+	 }
+	 }
+  </style>
+</head>
+<body>
+<main id="main-doc">
+<nav id="navbar">
+<header>
+  <h1>CSS Documentation</h1>
+  </header>
+  <ul>
+  <li><a href="#css_introduction" class="nav-link">CSS Introduction</a></li>
+  <li><a href="#css_background" class="nav-link">CSS Background</a></li>
+  <li><a href="#css_border" class="nav-link">CSS Border</a></li>
+  <li><a href="#css_link" class="nav-link">CSS Link</a></li>
+  <li><a href="#css_navigation" class="nav-link">CSS Navigation</a></li>
+  <li><a href="#css_responsive" class="nav-link">CSS Responsive</a></li>
+  
+  </ul>
+</nav>
+<section id="main-body">
+  <section class="main-section" id="css_introduction">
+      <header>
+	  <h2>CSS Introduction</h2>
+	  </header>
+	  <article>
+	  <p>Here you will find everything you need to know about about CSS. The CSS is used to style HTML docuements. An HTML document
+	  will display content and CSS will style those elements. Here are the list of topic about CSS.
+	  </p>
+	  <ul>
+	    
+	    <li>CSS Background</li>
+		<li>CSS Border</li>
+		<li>CSS Link</li>
+		<li>CSS Navigation</li>
+		<li>CSS Responsive</li>
+	  </ul>
+	  <p>Cascading Style Sheets, fondly referred to as CSS, is a simple design language intended to simplify the process of making web pages presentable.
+
+CSS handles the look and feel part of a web page. Using CSS, you can control the color of the text, the style of fonts, the spacing between paragraphs, how columns are sized and laid out, what background images or colors are used, layout designs,variations in display for different devices and screen sizes as well as a variety of other effects.
+
+CSS is easy to learn and understand but it provides powerful control over the presentation of an HTML document. Most commonly, CSS is combined with the markup languages HTML or XHTML.</p>
+	  </article>
+  </section>
+  
+  <section class="main-section" id="css_background">
+  <header>
+	  <h2>CSS Background</h2>
+	  </header>
+	  <article>
+	  <p>The CSS background properties are used to define the background effects for elements. There are lots of properties to design the background. 
+CSS background properties are as follows: 
+
+CSS Background-color Property: The background-color property in CSS is used to specify the background color of an element.
+CSS Background-image Property: The background-image property is used to set one or more background images to an element.
+CSS Background-repeat Property: The background-repeat property in CSS is used to repeat the background image both horizontally and vertically.
+CSS Background-attachment Property: The property background-attachment property in CSS is used to specify the kind of attachment of the background image with respect to its container.
+CSS Background-position Property: In CSS body-position property is mainly used to set an image at a certain position.
+CSS Background-origin Property: The background-origin is a property defined in CSS which helps in adjusting the background image of the webpage.
+CSS Background-clip Property: The background-clip property in CSS is used to define how to extend background (color or image) within an element.
+Background color Property: This property specifies the background color of an element. A color name can also be given as : “green”, a HEX value as “#5570f0”, an RGB value as “rgb(25, 255, 2)”. </p>
+	  <p>You must set the background color or an image as a background using these two properties.</p>
+	  <pre><code>
+	  h1{
+	  background-color: red;
+	  }
+	  </code></pre>
+	  <p>The example for background property. The background gives option to add images or other elements as background.</p>
+	  <pre><code>
+	    body{
+		background: url('/back-img.gif');
+		}
+	  </code></pre>
+	  </article>
+  </section>
+  <br>
+  <section class="main-section" id="css_border">
+        <header>
+	  <h2>CSS Border</h2>
+	  </header>
+	  <article>
+	  <p>The CSS border put a border around HTML elements. There are different style for each border. But you can use solid border which
+	  is the default border.The border properties allow you to specify how the border of the box representing an element should look. There are three properties of a border you can change −
+
+The border-color specifies the color of a border.
+
+The border-style specifies whether a border should be solid, dashed line, double line, or one of the other possible values.
+
+The border-width specifies the width of a border.
+
+
+The border-color property allows you to change the color of the border surrounding an element. You can individually change the color of the bottom, left, top and right sides of an element's border using the properties −
+
+1)border-bottom-color changes the color of bottom border.
+
+2)border-top-color changes the color of top border.
+
+3)border-left-color changes the color of left border.
+
+4)border-right-color changes the color of right border.</p>
+	  <p>Here is an example of CSS border.</p>
+	  <pre><code>
+	  div {
+	  
+	     border-top: 300px;
+		 border-right:200px;
+		 border-bottom:300px;
+		 border-left:200px;
+		 border-style:solid; 
+		 border-color: black;
+		}
+	  
+	  </code></pre>
+	  <p>The above is the long version of setting borders. The shorthand version is given below.</p>
+	  <pre><code>
+	   div {
+	     border: 2px solid black;
+		 }
+	  </code></pre>
+	  
+	  </article>
+  </section>
+  
+  <section class="main-section" id="css_link">
+      <header>
+	  <h2>CSS Link</h2>
+	  </header>
+	  <article>
+	  <p>In html, you can create links that will take you to another html page. The CSS link properties will decorate links in many ways.
+	  The links can have background, color and other css properties modied through CSS.Links or hyperlinks are an essential part of a website. It allows visitors to navigate through the site. Therefore styling the links properly is an important aspect of building a user-friendly website.
+
+See the tutorial on HTML links to learn more about links and how to create them.
+
+A link has four different states — link, visited, active and hover. These four states of a link can be styled differently through using the following anchor pseudo-class selectors.
+
+a:link — define styles for normal or unvisited links.
+a:visited — define styles for links that the user has already visited.
+a:hover — define styles for a link when the user place the mouse pointer over it.
+a:active — define styles for links when they are being clicked.
+You can specify any CSS property you'd like e.g. color, font, background, border, etc. to each of these selectors to customize the style of links, just like you do with the normal text. Consider the following example.</p>
+	  <pre>
+	  <code>
+	     a {
+		 
+		    color:red;
+			background:black;
+			}
+	  
+	  </code>	  
+	  </pre>
+	  <p>Sometimes you can use the link pseudo classes to manipulate links to simulate a behaviour. 
+	  For example <code>:hover</code> is a class that will change the link once user hover their mouse over the link.</p>
+	  <pre><code>
+	      a:hover {
+		     background:red;
+			 color: white;
+			 }
+	  </code>
+	  </pre>
+	  </article>
+  </section>
+  <section class="main-section" id="css_navigation">
+       <header>
+	  <h2>CSS Navigation</h2>
+	  </header>
+	  <article>
+	  <p>One popular use of CSS is creation of navigation links. You can create a vertical or a horizontal navigation link. 
+	  The link and list element of html together with css create beautiful navigations.</p>
+	  <p>When you click on the navigation it will take to same page but different location, or different external website.</p>
+	  <p>A Navigation bar or navigation system comes under GUI that helps the visitors in accessing information. It is the UI element on a webpage that includes links for the other sections of the website.
+
+A navigation bar is mostly displayed on the top of the page in the form of a horizontal list of links. It can be placed below the logo or the header, but it should always be placed before the main content of the webpage.
+
+It is important for a website to have easy-to-use navigation. It plays an important role in the website as it allows the visitors to visit any section quickly.</p>
+<h3>Horizontal Navigation Bar</h3>
+<p>The horizontal navigation bar is the horizontal list of links, which is generally on the top of the page.It may be above, below, to the left or to the right of the header or logo, but it is always placed before the main content of the page and is consistent on every page.
+<h3>Pros and cons of horizontal navigation bar</h3>
+<h3>Pros:</h3>
+<br>1) Many modern site designs include full width images. Horizontal navigation integrates more easily with this type of design.</br>
+<br>2) The space for horizontal navigation is limited. Therefore, designers must work within finite space constraints. This may seem like a negative (see Cons below), but in fact, it requires developers to be more thoughtful about the exact words that they use. Studies find that web readers do not actually read. Rather, they scan the text. The more concise the text, the more likely they are to find what they need quickly and easily.</br>
+<h3>Cons:</h3>
+<br>1) Limited space requires more thoughtful attention to the number and specific wording of navigation links</br>
+<br>Open drop down submenus may temporarily overlap the main content</br>
+<h3>Vertical navigation bar</h3>
+<p>A vertical navigation bar is a list of links on the left or right side of each page.
+</p>
+<h3>Pros and cons of vertical navigation bar.</h3>
+<h3>Pros:</h3>
+<br>1) There is room for a greater number of top level links.
+Link names can be longer.</br>
+<br>2) Some businesses want to be perceived as different or bucking the trend. In this case, vertical navigation may be preferred just because it is less common.</br>
+<h3>Cons:</h3>
+<br>1) Some site visitors will be less comfortable using a sidebar navigation, because that type of menu is less common than horizontal.</br>
+<br>2)With unlimited space for top level links, there is less incentive to organize the content into a smaller number of top level categories or subject areas. It allows the designer to be lazy about deciding what’s most important and what is secondary.</br>
+<br>3) The user may find it more difficult to go from a vertical menu item to its corresponding submenu, which extends to the side, than it is to go from a horizontal top-level menu item to its sub-menu, which extends below. This is because the motion to engage a flyout menu is across then down rather than simply straight down. And if they try to go directly to an item further down the sub-menu with a diagonal motion of their mouse, the sub-menu will often disappear, which is frustrating.</br>
+
+
+</p>
+	 </article>
+  </section>
+  <section class="main-section" id="css_responsive">
+       <header>
+	  <h2>CSS Responsive</h2>
+	  </header>
+	  <article>
+	  <p>The CSS flexbox and CSS grid are two popular method to create a responsive website. The responsive web site will always change its 
+	  layout and design according to the device viewport.</p>
+	  <h2>CSS Flexbox</h2>
+	  <p>The Flexible Box Module, usually referred to as flexbox, was designed as a one-dimensional layout model, and as a method that could offer space distribution between items in an interface and powerful alignment capabilities. This article gives an outline of the main features of flexbox, which we will be exploring in more detail in the rest of these guides.
+
+When we describe flexbox as being one dimensional we are describing the fact that flexbox deals with layout in one dimension at a time — either as a row or as a column. This can be contrasted with the two-dimensional model of CSS Grid Layout, which controls columns and rows together.</p>
+<h2>CSS grid</h2>
+<p>CSS Grid Layout (aka “Grid” or “CSS Grid”), is a two-dimensional grid-based layout system that, compared to any web layout system of the past, completely changes the way we design user interfaces. CSS has always been used to layout our web pages, but it’s never done a very good job of it. First, we used tables, then floats, positioning and inline-block, but all of these methods were essentially hacks and left out a lot of important functionality (vertical centering, for instance). Flexbox is also a very great layout tool, but its one-directional flow has different use cases — and they actually work together quite well! Grid is the very first CSS module created specifically to solve the layout problems we’ve all been hacking our way around for as long as we’ve been making websites.</p>
+	  <p>You can create a mobile ready site with media queries and flex or grid layout. The size of the screen will apply a different CSS.
+	  Therefore, your page will appear differently on different devices.</p>
+	  </article>
+  </section>
+  </section>
+</main>
+
+</body>
+</html>
